@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wine & Dine | Fine Dining Restaurant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap)" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Wine & Dine</div>
+    
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero active">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <p class="tagline">Luxury Dining Experience</p>
+      <h1>Welcome to Wine & Dine</h1>
+      <p>
+        Savor gourmet cuisine, handcrafted beverages, and a warm atmosphere
+        designed for unforgettable moments.
+      </p>
+     <div class="hero-buttons">
+      <a href="#menu" class="btn btn-primary">Explore Menu</a>
+      <a href="#reservation" class="btn btn-secondary">Book a Table</a>
+</div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="section-header">
+      <p class="section-tag">About Us</p>
+      <h2>Where Taste Meets Elegance</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          At Wine & Dine, we bring together exquisite flavors, elegant presentation,
+          and exceptional service to create a premium dining experience.
+        </p>
+        <p>
+          Whether you are joining us for a romantic dinner, family celebration,
+          or business meeting, our restaurant offers the perfect setting.
+        </p>
+      </div>
+      <div class="about-features">
+
+  <div class="feature-card">
+    <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/fresh.jpg" alt="Fresh Ingredients">
+    <div class="feature-content">
+      <h3>🥗 Fresh Ingredients</h3>
+      <p>Prepared daily with quality local produce and premium spices.</p>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/Chefs.jpg" alt="Expert Chef">
+    <div class="feature-content">
+      <h3>👨‍🍳 Expert Chefs</h3>
+      <p>Our chefs craft every meal with passion, precision, and creativity.</p>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/Elegants.jpg" alt="Elegant Ambience">
+    <div class="feature-content">
+      <h3>✨ Elegant Ambience</h3>
+      <p>A refined environment perfect for memorable dining experiences.</p>
+    </div>
+  </div>
+
+</div>
+    </div>
+  </section>
+
+  <section id="menu" class="section">
+    <div class="section-header">
+      <p class="section-tag">Our Specials</p>
+      <h2>Signature Menu</h2>
+    </div>
+    <div id="menu-container" class="menu-grid">
+      <div class="menu-card">
+        <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/Grilled_steak.jpg" alt="Grilled steak">
+        <div class="menu-card-content">
+          <h3>Grilled Ribeye Steak</h3>
+          <p>Juicy grilled steak served with seasonal vegetables and pepper sauce.</p>
+          <span>R240</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/italian_pizza.webp" alt="Italian pizza">
+        <div class="menu-card-content">
+          <h3>Classic Italian Pizza</h3>
+          <p>Stone-baked pizza topped with mozzarella, basil, and rich tomato sauce.</p>
+          <span>R180</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/italian_pasta.jpg" alt="Pasta dish">
+        <div class="menu-card-content">
+          <h3>Creamy Alfredo Pasta</h3>
+          <p>Fresh pasta tossed in a creamy parmesan sauce with herbs.</p>
+          <span>R160</span>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <img src="C:/Users/agnes/Desktop/ITTFA4-14 Assessment/Frontend/Images/Desserts.jpg" alt="Dessert">
+        <div class="menu-card-content">
+          <h3>Chocolate Lava Cake</h3>
+          <p>Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+          <span>R100</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservation" class="section reservation">
+    <div class="section-header">
+      <p class="section-tag">Reservation</p>
+      <h2>Book Your Table</h2>
+    </div>
+    <form id="reservation-form" class="styled-form">
+      <div class="form-group">
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+      </div>
+      <div class="form-group">
+        <input type="text" name="phone" placeholder="Phone Number" required />
+        <input type="number" name="guests" placeholder="Number of Guests" required min="1" />
+      </div>
+      <div class="form-group">
+        <input type="date" name="reservation_date" required />
+        <input type="time" name="reservation_time" required />
+      </div>
+      <textarea name="special_request" placeholder="Special Requests (Optional)"></textarea>
+      <button type="submit" class="btn btn-primary">Submit Reservation</button>
+      <p id="reservation-message"></p>
+    </form>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-header">
+      <p class="section-tag">Contact</p>
+      <h2>Get In Touch</h2>
+    </div>
+    <form id="contact-form" class="styled-form">
+      <div class="form-group">
+        <input type="text" name="full_name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+      </div>
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" placeholder="Write your message here..." required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p id="contact-message"></p>
+    </form>
+  </section>
+
+ 
+<footer class="footer">
+  <p>&copy; 2026 Wine & Dine Restaurant. All rights reserved.</p>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://x.com/yourhandle" target="_blank" aria-label="X (Twitter)">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@yourhandle" target="_blank" aria-label="TikTok">
+      <i class="fab fa-tiktok"></i>
+    </a>
+  </div>
+</footer>
+  <script src="app.js">
+    fetch("php/get_menu.php")
+  .then(response => response.json())
+  .then(data => {
+
+    const container = document.getElementById("menu-container");
+
+    container.innerHTML = "";
+
+    data.forEach(item => {
+      container.innerHTML += `
+        <div class="menu-card">
+          <img src="${item.image}" alt="${item.name}">
+          <h3>${item.name}</h3>
+          <p>${item.description}</p>
+          <span>R${item.price}</span>
+        </div>
+      `;
+    });
+
+  });
+
+document.getElementById("reservationForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const data = {
+    name: this.name.value,
+    email: this.email.value,
+    phone: this.phone.value,
+    guests: this.guests.value,
+    date: this.date.value,
+    time: this.time.value
+  };
+
+  fetch("php/create_reservation.php", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(response => {
+    alert(response.message || "Something went wrong");
+  });
+
+});
+  </script>
+</body>
+</html>

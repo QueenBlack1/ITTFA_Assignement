@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservations</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ 
+
+<section class="page-banner">
+    <h1>Book a Table</h1>
+</section>
+
+<form action="php/reserve.php" method="POST" class="reservation-form">
+
+    <input type="text" name="fullname"
+           placeholder="Full Name" required>
+
+    <input type="email" name="email"
+           placeholder="Email Address" required>
+
+    <input type="tel" name="phone"
+           placeholder="Phone Number" required>
+
+    <input type="date" name="reservation_date" required>
+
+    <input type="time" name="reservation_time" required>
+
+    <input type="number" name="guests"
+           placeholder="Number of Guests" required>
+ 
+    <button type="submit">Reserve Table</button>
+
+
+</form>
+
+</body>
+</html>
